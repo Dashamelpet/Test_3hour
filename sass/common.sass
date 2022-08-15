@@ -1,0 +1,176 @@
+@mixin font
+    font-family: 'Roboto', sans-serif
+    font-weight: normal
+    color: #000
+@font-face 
+    font-family: "Acrobat"
+    font-style: normal
+    font-weight: 400
+    src: url('../font/FontsFree-Net-Akrobat-Regular.ttf') 
+@keyframes click
+    0% 
+        opacity: 0
+    
+    100% 
+        opacity: 1
+img
+    display: block
+.title_block
+    font-family: "Acrobat"
+    font-size: 32px
+    color: #000
+    padding-bottom: 10px
+    border-bottom: 2px solid #fb5602
+    max-width: 280px
+    margin: 100px auto 50px
+    text-align: center
+.container
+    max-width: 1366px
+    padding: 0 98px
+    margin: 0 auto
+body
+    font-size: 16px
+    @include font
+a
+    color: #000
+    text-decoration: none
+    display: block
+.wrap_header
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 8px
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__nav
+        &__list
+            display: flex
+            justify-content: space-between
+            align-items: center
+            column-gap: 50px
+            padding: 18px 0 22px
+            font-size: 16px
+            @include font
+            &__item
+                a
+                    border-bottom: 1px solid transparent
+                    padding-bottom: 2px
+                    &:hover
+                        border-bottom: 1px solid #39c7f3
+.banner_wrap
+    position: absolute
+    top: 405px
+.banner
+    position: relative
+    background: url('../img/Like pic.png')
+    background-repeat: no-repeat
+    background-position: right 20px
+    height: 627px
+    &__title
+        font-size: 72px
+        max-width: 510px
+        position: absolute
+        top: 212px
+        font-family: "Acrobat"
+    &__btn
+        width: 220px
+        height: 45px
+        @include font
+        background: linear-gradient(0deg, rgba(251,85,3,1) 0%, rgba(255,162,0,1) 100%)
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 12px
+        a
+            color: #fff
+    &__animation
+        p
+            padding-top: 30px
+            margin-left: 180px
+            @include font
+            position: relative
+            &::before
+                content: ''
+                background: url('../img/aroow.svg') no-repeat
+                position: absolute
+                left: -36px
+                height: 26px
+                width: 26px
+                animation: click 1.5s ease infinite
+.promotion  
+    padding-bottom: 120px 
+    &__block  
+        margin-top: 125px 
+        display: flex
+        align-items: start 
+        justify-content: space-between
+        column-gap: 100px
+        font-family: 'Roboto'
+        font-size: 18px
+        text-align: center
+        &__item
+            width: 20%
+            &__icon
+                margin-bottom: 45px
+                img
+                    margin: 0 auto
+            &:nth-child(1), &:nth-child(3)
+                position: relative  
+                &::before
+                    content: ''
+                    background: url('../img/Layer 519.svg')
+                    position: absolute
+                    top: -120px
+                    height: 110px
+                    width: 277px
+            &:nth-child(2)
+                position: relative  
+                &::before
+                    content: ''
+                    background: url('../img/Layer 519 copy 2.svg')
+                    position: absolute
+                    bottom: -120px
+                    height: 110px
+                    width: 277px
+.proects__card
+    display: flex
+    justify-content: space-between
+.proects
+    
+    &__item
+        margin-top: 220px
+        position: relative
+        &__img
+            z-index: 2
+            position: absolute
+            top: -200px
+            left: -56px
+        &__card
+            background: linear-gradient(0deg, rgba(41,143,176,1) 0%, rgba(57,199,244,1) 100%)
+            height: 400px
+            width: 225px
+            box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.25)
+            border-radius: 0 0 18px 18px
+            overflow: hidden
+            &__title
+                color:#fff
+                font-family: "Acrobat"
+                font-weight: bold
+                font-size: 18px
+                padding-top: 130px
+                margin: 0 auto 35px
+                max-width: 110px
+                text-align: center
+            li
+                position: relative
+                color: #fff
+                font-family: "Acrobat"
+                font-size: 16px
+                padding:0 40px 20px 50px
+                &::before
+                    position: absolute
+                    left: 20px
+                    content: url("data:image/svg+xml,%0A%3Csvg version='1.2' baseProfile='tiny-ps' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Ctitle%3ERectangle 1%3C/title%3E%3Cdefs%3E%3ClinearGradient id='grd1' gradientUnits='userSpaceOnUse' x1='11.98' y1='21.983' x2='11.98' y2='1.976'%3E%3Cstop offset='0' stop-color='%23fb5503' /%3E%3Cstop offset='1' stop-color='%23ffa200' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cstyle%3E tspan %7B white-space:pre %7D .shp0 %7B fill: url(%23grd1) %7D %3C/style%3E%3Cpath id='Rectangle 1' class='shp0' d='M12.69 2.27L21.69 11.27C22.08 11.66 22.08 12.3 21.69 12.69L12.69 21.69C12.3 22.08 11.66 22.08 11.27 21.69L2.27 12.69C1.88 12.3 1.88 11.66 2.27 11.27L11.27 2.27C11.66 1.88 12.3 1.88 12.69 2.27Z' /%3E%3C/svg%3E")
+
+
+
+
